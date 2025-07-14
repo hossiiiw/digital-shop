@@ -120,3 +120,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.animate:hover .animate-left {
+  transform: translateX(-10px);
+  transition: 0.5s all;
+}

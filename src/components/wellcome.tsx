@@ -12,7 +12,7 @@ function Wellcome() {
         <h1 className="text-2xl font-bold text-gray-800">Digital Shop</h1>
       </div>
       <Button className="mt-6 " variant={'default'} asChild>
-        <Link href="">Go to Product</Link>
+        <Link href="/products">Go to Product</Link>
       </Button>
     </div>
   );
