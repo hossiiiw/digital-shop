@@ -43,7 +43,7 @@ async function ProductItem({
           <p className=" text-lg font-semibold">{price} $</p>
           <div className="flex gap-2">
             <Heart />
-            <Link href={''}>
+            <Link href={`/products/catalog?id=${id}`}>
               <GalleryThumbnailsIcon />
             </Link>
           </div>
