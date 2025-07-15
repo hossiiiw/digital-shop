@@ -14,6 +14,9 @@ function Wellcome() {
       <Button className="mt-6 " variant={'default'} asChild>
         <Link href="/products">Go to Product</Link>
       </Button>
+      <Button className="mt-6 " variant={'default'} asChild>
+        <Link href="/user">Go to User</Link>
+      </Button>
     </div>
   );
 }
