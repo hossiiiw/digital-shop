@@ -20,6 +20,7 @@ enum ProductCategory {
   MOBILE
   LAPTOP
   WATCH
+  AIRPOD
   OTHERS
 }
 
