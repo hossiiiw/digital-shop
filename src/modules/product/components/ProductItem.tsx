@@ -17,7 +17,7 @@ interface IProductProps {
   quantity: number;
   images: any;
 }
-async function ProductItem({
+ function ProductItem({
   id,
   name,
   price,
@@ -30,7 +30,7 @@ async function ProductItem({
       <CardHeader>
         <div className="relative h-[300px] w-full">
           <img
-            src={images[1].image}
+            src={images[0].image}
             alt=""
             className="  h-[300px] w-full rounded-t-lg object-cover"
           />

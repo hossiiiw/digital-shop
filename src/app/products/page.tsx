@@ -5,7 +5,6 @@ import React from 'react';
 
 async function Products() {
   const data = await prisma.product.findMany();
-  console.log(data);
   return (
     <div className="flex flex-col">
       <h1 className="font-bold text-xl mx-auto my-8">product page</h1>

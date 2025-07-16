@@ -1,17 +1,6 @@
 import React from 'react';
-import {
-  Button,
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from '@/components/ui';
-import {
-  ArrowLeft,
-  GalleryThumbnailsIcon,
-  Heart,
-  ShoppingCart,
-} from 'lucide-react';
+import { Button, Card } from '@/components/ui';
+import { ArrowLeft, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 function ProductDetails({
   name,
@@ -25,7 +14,18 @@ function ProductDetails({
 }) {
   return (
     <Card className="flex flex-col md:flex-row items-center justify-between p-12">
-      <img src={images[1].image} alt="" className="w-[60%] md:w-[40%] " />
+      {images[0].image ? (
+        <>
+          {' '}
+          <img src={images[0].image} alt="" className="w-[60%] md:w-[40%] " />
+        </>
+      ) : (
+        <>
+          <div className="h-80 w-[60%] md:w-[40%]  bg-gray-200 rounded-2xl flex items-center justify-center">
+            <p className="font-bold">No Image Available</p>
+          </div>
+        </>
+      )}
       <div className="w-full flex flex-col">
         <h2 className="font-bold text-xl mx-auto ">
           {name} ({quantity})
